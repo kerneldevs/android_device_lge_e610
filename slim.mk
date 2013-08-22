@@ -1,19 +1,18 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/slim/config/gsm.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common slim stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e610/e610.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 480
-TARGET_SCREEN_WIDTH := 320
+TARGET_BOOTANIMATION_NAME := 480
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e610
-PRODUCT_NAME := cm_e610
+PRODUCT_NAME := slim_e610
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-E610
 PRODUCT_MANUFACTURER := LGE
