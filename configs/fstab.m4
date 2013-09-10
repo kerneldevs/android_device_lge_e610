@@ -12,6 +12,4 @@
 #LGE_CHANGE_S [jyothishre.nk@lge.com] 20120926:Adding /data partition
 /dev/block/platform/msm_sdcc.3/by-num/p14         /system      ext4    ro,barrier=1,noatime                                wait
 /dev/block/platform/msm_sdcc.3/by-num/p20         /data        ext4    nosuid,nodev,noatime,barrier=1,noauto_da_alloc,errors=continue      check
-/devices/platform/msm_sdcc.1/mmc_host      /storage/sdcard1 vfat defaults voldmanaged=sdcard:auto
-/devices/platform/msm_sdcc.3/mmc_host      /storage/sdcard0 vfat defaults voldmanaged=emmc:23,nonremovable
-
+/devices/platform/msm_sdcc.1/mmc_host/mmc1      /storage/sdcard1 auto default voldmanaged=sdcard:auto
